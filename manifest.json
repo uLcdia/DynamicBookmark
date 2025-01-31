@@ -1,0 +1,34 @@
+{
+  "manifest_version": 2,
+  "name": "Dynamic Bookmark",
+  "version": "1.0",
+  "description": "Update bookmark when URL changes",
+
+  "permissions": [
+    "tabs",
+    "bookmarks",
+    "webNavigation",
+    "<all_urls>"
+  ],
+
+  "browser_action": {
+    "default_icon": {
+      "48": "icons/bookmark-48.png"
+    },
+    "default_title": "Dynamic Bookmark"
+  },
+
+  "background": {
+    "scripts": ["background.js"]
+  },
+
+  "options_ui": {
+    "page": "options.html",
+    "browser_style": true
+  },
+
+  "icons": {
+    "48": "icons/bookmark-48.png",
+    "96": "icons/bookmark-96.png"
+  }
+} 
